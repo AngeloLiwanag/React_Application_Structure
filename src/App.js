@@ -1,12 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
 import HelloWorld from './components/HelloWorld';
+
 function App() {
   return (
     <div className="App">
-      <HelloWorld/>
+      <HelloWorld someText={"Hello World"}>
+        <p>This is a child</p>
+        <p>This is another child</p>
+        <p>This is even another child</p>
+      </HelloWorld> 
     </div>
   );
 }

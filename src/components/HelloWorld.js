@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
+
 class HelloWorld extends Component {
     render() {
-        return <h1>Hello World</h1>;
+        return (
+            <div>
+                <p>{this.props.someText}</p>
+                {this.props.children}
+            </div>
+        );
     }
 }
+
 export default HelloWorld;

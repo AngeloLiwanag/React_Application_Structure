@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import HelloWorld from './components/HelloWorld';
+import styles from './components/MyButtonComponent.module.css';
 
 const Button = ({click, text}) => {
   return(
@@ -23,7 +24,7 @@ function App() {
         <p>This is another child</p>
         <p>This is even another child</p>
         {/* synthetic events */}
-        <button onClick={() => console.log("Believe it or not.. I clicked this..")}>Click Me!</button>
+        <button className={styles.myButton} onClick={() => console.log("Believe it or not.. I clicked this..")}>Click Me!</button>
         <Button text={buttonOneText} click={clickHandler}/>
         <Button text={buttontwoText} click={clickHandler}/>
       </HelloWorld> 
